@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- to add title on your website -->
+	<title>ITARSI STMKG - ITARSI FAIR 2020</title>
+	<!-- to add logo on your title -->
+	<link rel="icon" href="asset/img/title3-img.ico">
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/demostyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="asset/img/title3-img.ico">
+
+	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
+	<script src="asset/jquery/Jquery.js"></script>
+	<script src="asset/jquery/popper.js"></script>
+
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+
+ 	<link rel="stylesheet" href="src/responsive-carousel.css" media="screen">
+ 	<link rel="stylesheet" href="src/responsive-carousel.fade.css" media="screen">
+ 	<link rel="stylesheet" href="assets/demostyles.css">
+
+	<style type="text/css">
+		body {
+			font-family: 'Montserrat', sans-serif;
+			
+		}
+		.judul {
+			font-family: 'Bebas Neue', cursive;
+			font-size: 24px;
+		}
+		.besar {
+			font-size: 30px;
+		}
+		.aa {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gmap {
+	width: 100%;
+	height: 600px;
+}
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #f27100;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block; }
+
+		.desc-besar {
+			font-size: 24px;
+		}
+		.desc-kecil {
+			font-size: 14px;
+		}
+		.desc-sedang {
+			font-size: 20px;
+		}
+		.navigasi {
+			color: rgba(255,255,255,.85);
+			font-style: normal;
+		}
+		.navigasi:hover, a.navigasi:hover {
+			color: #ffffff;
+			font-style: normal;
+			text-decoration: none;
+		}
+
+		.topnav {
+  overflow: hidden;
+  background-color: #f27100;
+  display: none;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f27100;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+
+  }
+
+  .topnav {
+  display: block;
+  transform: translate(0%, 180%);
+}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed; transform: translate(0, 110px);}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .pencarian {
+	transform: translate(25%);
+}
+	.gmap {
+	height: 50px;
+	width: 100%;
+	}
+}
+	</style>
+</head>
+<body>
+	<!-- header begin -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #f27100;">
+			<a href="index.html" class="navbar-brand logo">
+				<img src="asset/img/logo-datar-nav.png" alt="logo" style="height: 50px; padding: 0.3vw">
+			</a>
+			<div class="collapse navbar-collapse  " id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item judul" style="background-color: #f27100">
+						<a href="index.html" class="nav-link">
+							HOME
+						</a>
+					</li>
+					<li class="nav-item judul" style="background-color: #f27100">
+						<a href="event.html" class="nav-link">
+							EVENT & OPREC
+						</a>
+					</li>
+					<li class="nav-item dropdown judul">
+						<button class="nav-link" style="background-color: #f27100; border: none;">MATERIAL</button>
+							<div class="dropdown-content desc-sedang">
+    							<a href="https://drive.google.com/open?id=0B4Q1sw7cjRfkfk1FaDh4VUFBVnE0LUQ1dnhUZ24yV3VoMm5ta2p3NmRURWlmM0c2ZmdUNXM" class="navigasi">Repositori Materi Kuliah</a>
+    							<a href="opdisc.html" class="navigasi">Open Discussion</a>
+							</div>
+					</li>
+					<li class="nav-item judul">
+						<a href="profil.html" class="nav-link">
+							PROFILE
+						</a>
+					</li>
+					<li class="nav-item active judul">
+						<a href="contact.html" class="nav-link">
+							CONTACT
+						</a>
+					</li>
+					<li class="nav-item dropdown judul">
+						<button class="nav-link" style="background-color: #f27100; border: none;">LINK</button>
+							<div class="dropdown-content desc-sedang">
+    							<a href="https://stmkg.ac.id" class="navigasi">STMKG</a>
+    							<a href="https://instrumentasi.stmkg.ac.id" class="navigasi">Prodi Instrumentasi</a>
+							</div>
+					</li>
+				</ul>
+			</div>
+				<ul class="navbar-nav pencarian">
+					<li class="nav-item">
+						<!-- search form begin -->
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search...">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary bg-dark" id="button-addon2">
+										<img src="asset/img/search-img.png" alt="logo" style="height: 20px">
+									</button>
+								</div>
+							</div>
+					</li>
+				</ul>
+		</nav>
+
+  <div class="topnav fixed-top" id="myTopnav">
+  <a href="#home" class="active">CONTACT</a>
+  <a href="index.html">HOME</a>
+  <a href="event.html">EVENT & OPREC</a>
+  <a href="#contact">MATERIAL</a>
+  <a href="https://drive.google.com/open?id=0B4Q1sw7cjRfkfk1FaDh4VUFBVnE0LUQ1dnhUZ24yV3VoMm5ta2p3NmRURWlmM0c2ZmdUNXM" class="navigasi" style="padding-left: 35px">Repositori Materi Kuliah</a>
+  <a href="opdisc.html" class="navigasi" style="padding-left: 35px">Open Discussion</a>
+  <a href="profil.html">PROFILE</a>
+  <a href="#index">LINK</a>
+  <a href="stmkg.ac.id" class="navigasi" style="padding-left: 35px">STMKG</a>
+  <a href="instrumentasi.stmkg.ac.id" class="navigasi" style="padding-left: 35px">Prodi Instrumentasi</a>
+  <a href="javascript:void(0);" class="navbar-toggler icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	</header>
+	<!-- header end -->
+	<div class="container-fluid" style="margin: 90px 0 30px">
+			<div class="container">
+				<!<div class="card gmap">
+					<div class="card-body">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.991637035898!2d106.74683447971974!3d-6.26482916310003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f05e4e6d1c27%3A0x8f19299fa86d971f!2sSekolah%20Tinggi%20Meteorologi%20Klimatologi%20dan%20Geofisika%20(STMKG)!5e0!3m2!1sid!2sid!4v1580486008818!5m2!1sid!2sid" width="100%" height=600px frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+				</div>
+				<p style="padding-bottom: 150px"></p>
+				<!-- build critical and suggestion -->
+				<h3 class="text-center  judul besar">Kritik dan Saran</h3>
+				<div class="form-group row">
+					<label for="example1" class="col-sm-2 col-form-label font-weight-bold">Nama</label>
+					<input type="text" class="col-sm-10 form-control" id="example1" placeholder="Nama Lengkap">
+				</div>
+				<div class="form-group row">
+					<label for="example2" class="col-sm-2 col-form-label font-weight-bold">Email</label>
+					<input type="email" class="col-sm-10 form-control" id="example2" placeholder="contoh@domain.com">
+				</div>
+				<div class="form-group row">
+					<label for="example3" class="col-sm-2 col-form-label font-weight-bold">Kritik dan Saran</label>
+					<textarea id="example3" cols="30" rows="10" class="col-sm-10 form-control" placeholder="Kritik dan saran"></textarea>
+				</div>
+				<!-- build address and contact -->
+				<h3 class="text-center  judul besar">Alamat dan Kontak</h3>
+				<div class="form-group row">
+					<label for="example4" class="col-sm-2 col-form-label font-weight-bold">
+						Alamat
+					</label>
+					<label for="example4" class="col-sm-10 col-form-label text-justify">
+						Jl. Perhubungan I No. 5, Pondok Betung, Pondok Aren, Tangerang Selatan, Banten 15221
+					</label>
+				</div>
+				<div class="form-group row">
+					<label for="example4" class="col-sm-2 col-form-label font-weight-bold">
+						Whatsapp
+					</label>
+					<label for="example4" class="col-sm-10 col-form-label text-justify">
+						081218293019 (Yulieta)
+					</label>
+				</div>
+				<div class="form-group row">
+					<label for="example4" class="col-sm-2 col-form-label font-weight-bold">
+						Email 1
+					</label>
+					<label for="example4" class="col-sm-10 col-form-label text-justify">
+						 itarsi@stmkg.ac.id
+					</label>
+				</div>
+				<div class="form-group row">
+					<label for="example4" class="col-sm-2 col-form-label font-weight-bold">
+						Email 2
+					</label>
+					<label for="example4" class="col-sm-10 col-form-label text-justify">
+						 itarsi.stmkg@gmail.com
+					</label>
+				</div>
+				<div class="form-group row">
+					<label for="example4" class="col-sm-2 col-form-label font-weight-bold">
+						Instagram
+					</label>
+					<label for="example4" class="col-sm-10 col-form-label text-justify">
+						 itarsi.stmkg
+					</label>
+				</div>
+				<!-- build maps on html -->
+
+			</div>
+	</div>
+	<!-- footer start -->
+	<footer class="page-footer bg-dark text-white" style="padding-top: 30px;">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a href="https://www.instagram.com/itarsi.stmkg">
+					<img src="asset/img/instagram.png" alt="instagram" class="float-right" width="40px">
+				</a>
+			</div>
+			<div class="col">
+				<a href="mailto:itarsi.stmkg@gmail.com">
+					<img src="asset/img/email.png" alt="Email" class="float-left" width="40px">
+				</a>
+			</div>
+		</div>
+	</div> 
+		<div class="footer-copyright text-center py-3"> 
+			Copyright © ITARSI Fair 2020 - INSPARTA
+		</div>
+	</footer>
+	<!-- footer end -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav fixed-top") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav fixed-top";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITARSI STMKG - ITARSI FAIR 2020</title>
+
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/demostyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap" rel="stylesheet">
+	<link rel="icon" href="asset/img/title3-img.ico">
+
+	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
+	<script src="asset/jquery/Jquery.js"></script>
+	<script src="asset/jquery/popper.js"></script>
+
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+
+ 	<link rel="stylesheet" href="src/responsive-carousel.css" media="screen">
+ 	<link rel="stylesheet" href="src/responsive-carousel.fade.css" media="screen">
+ 	<link rel="stylesheet" href="assets/demostyles.css">
+
+ 	<script src="src/responsive-carousel.js"></script>
+ 	<script src="src/responsive-carousel.autoplay.js"></script>
+ 	<script src="src/responsive-carousel.autoinit.js"></script>
+ 	<script src="src/globalenhance.js"></script>
+
+<style>
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+a {
+	color: black;
+}
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+<style>
+.aa {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #f27100;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block; }
+</style>
+
+	<style type="text/css">
+		body {
+			font-family: 'Montserrat', sans-serif;
+			
+		}
+		.judul {
+			font-family: 'Bebas Neue', cursive;
+			font-size: 24px;
+		}
+		.besar {
+			font-size: 2vw;
+		}
+
+		.feed-img {}
+
+		.feeds {
+		margin: 5px;
+  		float: left;
+  		width: 240px;
+		}
+		.subjudul-menu {padding-left: 13px;}
+
+		.jarak {
+			padding-right: 2vw;
+		}
+		
+		div.feeds img {
+  			width: 100%;
+  			height: auto;
+		}
+
+		div.desc {
+  			padding: 10px;
+  			text-align: center;
+		}
+
+		.desc-besar {
+			font-size: 24px;
+		}
+		.desc-kecil {
+			font-size: 14px;
+		}
+		.desc-sedang {
+			font-size: 20px;
+		}
+		.navigasi {
+			color: rgba(255,255,255,.85);
+			font-style: normal;
+		}
+		.navigasi:hover, a.navigasi:hover {
+			color: #ffffff;
+			background-color: orange;
+			font-style: normal;
+			text-decoration: none;
+		}
+		.hellothere {
+			float: center;
+			font-size: 5vw;
+		}
+
+@media only screen and (max-width: 800px) {
+	.logo {
+		transform: translate(15%, 0);
+	}
+  .prev, .next,.text {font-size: 11px}
+		.judul {
+			font-family: 'Bebas Neue', cursive;
+			font-size: 24px;
+		}
+		.besar {
+			font-size: 32px;
+		}
+		.feeds {
+		float: center;
+		margin: 5px;
+  		float: center;
+  		width: 240px;
+		}
+		.subjudul-menu {padding-left: 13px;}
+
+		.feed-img {
+			transform: translate(25px);
+		}
+
+		.jarak {
+			padding-right: 1vw;
+		}
+		
+		div.feeds img {
+  			width: 80%;
+  			height: auto;
+  			float: center;
+		}
+
+		div.desc {
+  			padding: 5px;
+  			text-align: center;
+		}
+
+		.desc-besar {
+			font-size: 20px;
+		}
+		.desc-kecil {
+			font-size: 12px;
+		}
+		.desc-sedang {
+			font-size: 18px;
+		}
+		.navigasi {
+			font-style: normal;
+		}
+		.navigasi:hover, a.navigasi:hover {
+			font-style: normal;
+			text-decoration: none;
+		}
+		.hellothere {
+			float: center;
+			font-size: 30px;
+		}
+		.pencarian {
+			transform: translate(5%, -5%);
+		}
+		.carosel {
+			padding-top: 125px;
+		}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f27100;
+  display: none;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f27100;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav {
+  display: block;
+  transform: translate(0%, 100%);
+  }
+
+  .hellothere{
+  	transform: translate(-50%, -650%);
+  }
+
+  .navbar-collapse {
+  	display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .topnav {
+  display: block;
+  transform: translate(0%, 150%);
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+	.topnav {
+  display: block;
+  transform: translate(0%, 180%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+	.topnav {
+  display: block;
+  transform: translate(0%, 180%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: fixed; transform: translate(0, 110px);}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+	</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#hi").fadeIn("3000");
+	function explode(){
+		$("#hi").fadeOut("3000");
+	}
+setTimeout(explode, 4000);
+});
+</script>
+
+</head>
+<body>
+	<div class="carosel">
+	<div>
+		<div class="carousel" data-transition="fade" data-autoplay >
+	    	<div>
+				<img src="images/slideshow/slider1-img.jpeg">
+	   		</div>
+	    	<div>
+				<img src="images/slideshow/slider2-img.jpeg">
+	  	 	</div>
+	  		<div>
+				<img src="images/slideshow/slider3-img.jpg">
+	 		</div>
+		</div>
+	</div>
+		<div id="hi" style="display:none; color: #f27100;"><p class="judul besar centered hellothere">Hello, Engineers!</p></div>
+</div>
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #f27100;">
+			<a href="index.html" class="navbar-brand logo">
+				<img src="asset/img/logo-datar-nav.png" alt="logo" style="height: 50px; padding: 0.3vw">
+			</a>
+			<div class="collapse navbar-collapse  " id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active judul" style="background-color: #f27100">
+						<a href="index.html" class="nav-link">
+							HOME
+						</a>
+					</li>
+					<li class="nav-item judul" style="background-color: #f27100">
+						<a href="event.html" class="nav-link">
+							EVENT & OPREC
+						</a>
+					</li>
+					<li class="nav-item dropdown judul">
+						<button class="nav-link" style="background-color: #f27100; border: none;">MATERIAL</button>
+							<div class="dropdown-content desc-sedang">
+    							<a href="https://drive.google.com/open?id=0B4Q1sw7cjRfkfk1FaDh4VUFBVnE0LUQ1dnhUZ24yV3VoMm5ta2p3NmRURWlmM0c2ZmdUNXM" class="navigasi">Repositori Materi Kuliah</a>
+    							<a href="opdisc.html" class="navigasi">Open Discussion</a>
+							</div>
+					</li>
+					<li class="nav-item judul">
+						<a href="profil.html" class="nav-link">
+							PROFILE
+						</a>
+					</li>
+					<li class="nav-item judul">
+						<a href="contact.html" class="nav-link">
+							CONTACT
+						</a>
+					</li>
+					<li class="nav-item dropdown judul">
+						<button class="nav-link" style="background-color: #f27100; border: none;">LINK</button>
+							<div class="dropdown-content desc-sedang">
+    							<a href="https://stmkg.ac.id" class="navigasi">STMKG</a>
+    							<a href="https://instrumentasi.stmkg.ac.id" class="navigasi">Prodi Instrumentasi</a>
+							</div>
+					</li>
+				</ul>
+			</div>
+				<ul class="navbar-nav pencarian">
+					<li class="nav-item">
+						<!-- search form begin -->
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search...">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary bg-dark" id="button-addon2">
+										<img src="asset/img/search-img.png" alt="logo" style="height: 20px">
+									</button>
+								</div>
+							</div>
+					</li>
+				</ul>
+		</nav>
+
+		<div class="topnav fixed-top" id="myTopnav">
+  <a href="#home" class="active">HOME</a>
+  <a href="event.html">EVENT & OPREC</a>
+  <a href="#contact">MATERIAL</a>
+  <a href="https://drive.google.com/open?id=0B4Q1sw7cjRfkfk1FaDh4VUFBVnE0LUQ1dnhUZ24yV3VoMm5ta2p3NmRURWlmM0c2ZmdUNXM" class="navigasi" style="padding-left: 35px">Repositori Materi Kuliah</a>
+  <a href="opdisc.html" class="navigasi" style="padding-left: 35px">Open Discussion</a>
+  <a href="profil.html">PROFILE</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="#index">LINK</a>
+  <a href="stmkg.ac.id" class="navigasi" style="padding-left: 35px">STMKG</a>
+  <a href="instrumentasi.stmkg.ac.id" class="navigasi" style="padding-left: 35px">Prodi Instrumentasi</a>
+  <a href="javascript:void(0);" class="navbar-toggler icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	</header>
+<br>
+
+
+	<div class="container-fluid row" style="margin: 90px 0 30px">
+		<div class="container">
+			<h3 class="text-left judul besar" style="font-size: 36px;">Hall of Fame</h3>
+		<div>
+			<div class="feeds jarak">
+				<img src="images\75587985_416007129294646_1211815141539241072_n.jpg" class="feed-img">
+				<div class="desc">
+					<p class="desc-besar judul">JUARA 1</p>
+					<p class="desc-sedang judul">Lomba Karya Tulis Ilmiah - Universitas Sultan Ageng Tirtayasa</p>
+					<p class="desc-kecil">"Perancangan Alat Prekursor Gempa Bumi Kawasan Mata Air Panas Berbasis Internet of Things".</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="images\75454102_441863609793801_8665221044046890247_n.jpg" class="feed-img">
+				<div class="desc">
+					<p class="desc-besar judul">JUARA HARAPAN 1</p>
+					<p class="desc-sedang judul">Lomba Karya Tulis Ilmiah - Universitas Sultan Ageng Tirtayasa</p>
+					<p class="desc-kecil">"Rancang Bangun Air Quality Report System untuk Deteksi Gas Karbon Monoksida dan PM2.5".</p>
+				</div>
+			</div>
+			<div class="feeds jarak">
+				<img src="images\70989104_545760346189257_8266804712672230142_n.jpg" class="feed-img">
+				<div class="desc">
+					<p class=" desc-besar judul">JUARA 2</p>
+					<p class="desc-sedang judul">Lomba Karya Tulis Ilmiah Nasional SAINTEK EXPO - Universitas Negeri Lampung</p>
+					<p class="desc-kecil">"Perancangan Quadcopter untuk Pengukuran Cuaca Berbasis Website".</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="images\WhatsApp Image 2020-02-10 at 10.21.34.jpeg" class="feed-img">
+				<div class="desc">
+					<p class="desc-besar judul">JUARA 1</p>
+					<p class="desc-sedang judul">Lomba Karya Tulis Ilmiah Nasional - Polbangtan Bogor</p>
+					<p class="desc-kecil">"Mini-Weather Station (MI-WES) Sebagai Alat Monitoring dan Automasi Tanaman Sayuran Hidroponik Berbasis Android"</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="container">
+			<a href="artikel.html"><h3 class="text-left judul besar" style="font-size: 36px;">Artikel Kegiatan</h3></a>
+		<div>
+			<div class="feeds jarak">
+				<img src="https://itarsi.stmkg.ac.id/wp-content/uploads/2018/09/WhatsApp-Image-2018-09-17-at-3.57.29-PM-1-300x300.jpeg" class="feed-img">
+				<div class="desc">
+					<p class="desc-sedang judul">ITARSI FAIR 2018</p>
+					<p class="desc-kecil">Untuk Apa ITARSI Fair Diadakan? Teknologi terus menerus berkembang seiring berjalannya waktu. Internet of Things (IoT), Big Data, dan Artificial […]</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="https://itarsi.stmkg.ac.id/wp-content/uploads/2017/12/WhatsApp-Image-2018-05-27-at-3.17.02-PM-300x300.jpeg" class="feed-img">
+				<div class="desc">
+					<p class="desc-sedang judul">STMKG sebagai Perwakilan Indonesia pada ASEAN Student Forum</p>
+					<p class="desc-kecil">Taruni Aprilia Erlita Lisnawati, atau yang sering disapa April, cukup menjadi sorotan bagi taruna/i instrumentasi STMKG. Pasalnya, beliau menjadi salah […]</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="https://itarsi.stmkg.ac.id/wp-content/uploads/2017/08/WhatsApp-Image-2017-08-31-at-15.20.391-300x300.jpeg" class="feed-img">
+				<div class="desc">
+					<p class="desc-sedang judul">Partisipasi Taruna Instrumentasi Dalam KOMURINDO KOMBAT 2017</p>
+					<p class="desc-kecil">Kompetisi Muatan Roket Indonesia (KOMURINDO) dan Kompetisi Muatan Balon Atmosfer (KOMBAT) merupakan kompetisi tahunan yang diselenggarakan oleh LAPAN sejak tahun […]</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="https://itarsi.stmkg.ac.id/wp-content/uploads/2017/08/104257-300x300.jpg" class="feed-img">
+				<div class="desc">
+					<p class="desc-sedang judul">Seminar National Instruments</p>
+					<p class="desc-kecil">Senin, 14 Agustus 2017 bertempat di ruang rapat kampus STMKG, diadakan seminar nasional dari National Instrument yang diisi oleh Bapak […]</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container">
+<a href="event.html" style="text-decoration: none; color: black">
+	<h3 class="text-left judul besar" style="font-size: 36px">Event Lomba</h3>
+<div class="slideshow-container" style="text-shadow: 1px 1px rgba(255, 255, 255, 0.5);">
+
+<div class="mySlides fade">
+  <img src="images/slideshow/slider1-img.jpeg" style="width:100%">
+  <div class=" text judul besar" style="color: white">ITARSI Fair</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/slider2-img.jpeg" style="width:100%">
+  <div class=" text judul besar" style="color: white">Komurindo-Kombat</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/slider3-img.jpg" style="width:100%">
+  <div class=" text judul besar" style="color: white">Info Lomba KTI Lainnya</div>
+</div>
+</div>
+</a>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+		</div>
+
+		<div class="container">
+			<a href="opdisc.html"><h3 class="text-left judul besar" style="font-size: 36px">Open Discussion</h3></a>
+		<div>
+			<div class="feeds jarak">
+				<img src="images/new/opdisc1.jpg" class="feed-img">
+				<div class="desc">
+					<p class="desc-besar judul">INTRODUCING ANDROID STUDIO FOR BEGINNER</p>
+					<p class="desc-kecil"> Pemateri: Taruna Ade H. Fajri</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="images/new/opdisc2.jpeg" class="feed-img">
+				<div class="desc">
+					<p class="desc-besar judul">CRIMPING DAN KONFIGURASI DASAR JARINGAN (LAN) DENGAN MIKROTIK</p>
+					<p class="desc-kecil"> Pemateri: Taruna Elyas Abdhu Mukti Ade Setiawan</p>
+				</div>
+			</div>
+			<div class="feeds jarak">
+				<img src="images/new/opdisc3.jpg" class="feed-img">
+				<div class="desc">
+					<p class=" desc-besar judul">OPTIMALISASI IMPLEMENTASI MS WORD DALAM PENULISAN KARYA ILMIAH</p>
+					<p class="desc-kecil"> Pemateri: Taruna Luhur Hilmantara</p>
+				</div>
+			</div>
+
+			<div class="feeds jarak">
+				<img src="images/new/opdisc4.jpg" class="feed-img">
+				<div class="desc">
+					<p class="desc-besar judul">DASAR-DASAR MYSQL</p>
+					<p class="desc-kecil">Pemateri: Taruna Handi Sutriyan</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="container">
+			<h3 class="text-left judul besar" style="font-size: 36px">Tentang ITARSI</h3>
+			<p>Ikatan Taruna Instrumentasi Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (ITARSI-STMKG) merupakan wadah bagi taruna-taruni instrumentasi STMKG untuk mengembangkan pengetahuan dan kemampuan akademik di bidang instrumentasi meteorologi, klimatologi dan geofisika serta kemampuan lain dalam mendukung prestasi kerja di lingkungan Badan Meteorologi Klimatologi dan Geofisika (BMKG)</p>
+		</div>
+		</div>
+
+	<footer class="page-footer bg-dark text-white" style="padding-top: 30px;">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a href="https://www.instagram.com/itarsi.stmkg">
+					<img src="asset/img/instagram.png" alt="instagram" class="float-right" width="40px">
+				</a>
+			</div>
+			<div class="col">
+				<a href="mailto:itarsi.stmkg@gmail.com">
+					<img src="asset/img/email.png" alt="Email" class="float-left" width="40px">
+				</a>
+			</div>
+		</div>
+	</div>
+		<div class="footer-copyright text-center py-3"> 
+			Copyright © ITARSI Fair 2020 - INSPARTA
+		</div>
+	</footer>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav fixed-top") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav fixed-top";
+  }
+}
+</script>
+
+</body>
+</html>
